@@ -1,0 +1,28 @@
+{
+  "name": "dingo-example",
+  "version": "0.0.0",
+  "description": "Dingo Example",
+  "main": "apps/manage.js",
+  "scripts": {
+    "test": "apps/manage.js test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/beedesk/dingo-example.git"
+  },
+  "keywords": [
+    "dingo",
+    "django",
+    "nodejs",
+    "example"
+  ],
+  "author": "Thomas @ BeeDesk",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/beedesk/dingo-example/issues"
+  },
+  "homepage": "https://github.com/beedesk/dingo-example",
+  "dependencies": {
+    "dingo": "0.0.1"
+  }
+}

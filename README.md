@@ -1,0 +1,4 @@
+dingo-example
+=============
+
+Dingo Example

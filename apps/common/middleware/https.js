@@ -1,4 +1,3 @@
-var settings = require('dingo').settings;
 
 function process_request(req, res, next) {
   var loc = 'https://' + req.headers.host + (req.path ? '/' + req.path: '');

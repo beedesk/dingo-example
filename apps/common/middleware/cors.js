@@ -1,4 +1,3 @@
-var settings = require('dingo').settings;
 var ALLOWED_ORIGINS = settings.CORS_ALLOWED_ORIGINS;
 
 // -------------------------------------

@@ -7,7 +7,8 @@ var patterns = dingo.conf.urls.patterns;
 
 module.exports = {patterns: patterns(
     '',
-    url(/^$/, 'blogs.views.articles')
+    url(/^$/, 'blogs.views.list'),
+    url('^(?P<id>\\d{3,10})$', 'blogs.views.articles')
 )};
 
 console.log('blogs, patterns: ' + JSON.stringify(module.exports));

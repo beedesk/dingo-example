@@ -1,13 +1,15 @@
+var util = require('util');
 
-function get(req, res) {
+function get(req, res, params) {
+  console.log('params: ' + util.inspect(params));
   res.writeHead(200);
-  res.write('You got it.\n');
+  res.write(util.format('You are reading articles "%s".\n', params.id));
   res.end();
 }
 
-function post(req, res) {
+function post(req, res, params) {
   res.writeHead(200);
-  res.write('Post Received.\n');
+  res.write(util.format('Post Received for articles "%s".\n', params.id));
   res.end();
 }
 

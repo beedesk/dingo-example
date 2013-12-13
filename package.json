@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/beedesk/dingo-example",
   "dependencies": {
-    "dingo": "0.0.4",
+    "dingo": "0.0.9",
     "connect": "~2.11.2"
   }
 }

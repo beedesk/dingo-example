@@ -23,3 +23,10 @@ curl http://localhost:5000/blogs
 ```bash
 curl -X POST http://localhost:5000/blogs
 ```
+
+## Running Tests (mocha)
+
+```bash
+node apps/manage.js test
+```
+

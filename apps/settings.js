@@ -9,6 +9,8 @@ var dev_settings = (fs.existsSync('./development_settings.js')?
 var DIR_TMP = './tmp';
 
 var settings = {
+  BASE_PATH: path.dirname(require.main.filename),
+
   ALLOWED_ORIGINS: [
     'https://www.example.com'
   ],

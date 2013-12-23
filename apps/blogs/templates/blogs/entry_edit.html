@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}{% block home_title %}{% endblock %}Dingo Example{% endblock %}
+
+{% block style %}
+{% block home_style %}
+{% endblock %}
+{% endblock %}
+
+{% block script %}
+{% block home_script %}
+{% endblock %}
+{% endblock %}
+
+{% block content %}
+<div id="main">
+    Hello Earth! This is entry {{ id }}.
+
+    Please update this blog entry:
+    <form method="post" action="/blogs/{{ id }}/edit">
+        <label>Nothing you can update</label><input name="nofield" type="text" value="nothing"/><br/><br/>
+        <input type="submit">
+    </form>
+    {% block home_content %}
+    {% endblock %}
+</div>
+{% endblock %}

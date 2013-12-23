@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}{% endblock %}</title>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', '']);
+        _gaq.push(['_setDomainName', '']);
+        _gaq.push(['_setAllowLinker', true]);
+        _gaq.push(['_trackPageview']);
+    </script>
+    {% block extra_meta %}
+    {% endblock %}
+
+    {% block style %}
+    {% endblock %}
+
+    {% block script %}
+    {% endblock %}
+</head>
+<body>
+<h1>Hello World.</h1>
+{% block content %}
+{% endblock %}
+
+{% include 'ga_footer.html' %}
+</body>
+</html>

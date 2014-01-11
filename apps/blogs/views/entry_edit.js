@@ -2,7 +2,6 @@ var util    = require('util');
 var render  = require('dingo').shortcuts.render;
 
 function get(req, res, params) {
-  console.log('params: ' + util.inspect(params));
   var rendered = render('blogs/entry_edit.html', params);
   res.writeHead(200);
   res.write(rendered);

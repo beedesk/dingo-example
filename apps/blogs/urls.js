@@ -9,8 +9,8 @@ var TemplateView = dingo.templates.TemplateView;
 module.exports = {patterns: patterns(
     '',
     url(/^$/, 'blogs.views.list'),
-    url('^(?P<id>\\d{3,10})$', TemplateView.as_view('blogs/entry.html')),
-    url('^(?P<id>\\d{3,10})/edit$', 'blogs.views.entry_edit')
+    url('^(?P<year>\\d{4})/(?P<id>\\d{3,10})$', TemplateView.as_view('blogs/entry.html')),
+    url('^(?P<year>\\d{4})/(?P<id>\\d{3,10})/edit$', 'blogs.views.entry_edit')
 
 )};
 

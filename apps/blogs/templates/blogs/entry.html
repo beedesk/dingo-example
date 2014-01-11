@@ -14,9 +14,9 @@
 
 {% block content %}
 <div id="main">
-    Hello Earth! This is entry {{ id }}.
+    Hello Earth! This is entry {{ id }}. Published in {{ year }}.
     {% block home_content %}
     {% endblock %}
-    <a href="/blogs/{{ id }}/edit">Edit</a>
+    <a href="/blogs/{{ year }}/{{ id }}/edit">Edit</a>
 </div>
 {% endblock %}

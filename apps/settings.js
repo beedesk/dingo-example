@@ -2,7 +2,6 @@ var fs = require('fs');
 var path = require('path');
 var util = require('util');
 
-console.log('loading local settings');
 var dev_settings = (fs.existsSync('./development_settings.js')?
                     require('./development_settings'): undefined);
 

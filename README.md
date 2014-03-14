@@ -4,6 +4,12 @@ Dingo is a Django inspired web development framework on NodeJS.
  
 This project is an example to demonstrate how it is used.
 
+## Get a list of supported management commands:
+
+```bash
+node apps/manage.js
+```
+
 ## Starting the server
 
 ```bash
